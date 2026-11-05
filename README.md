@@ -49,7 +49,6 @@ To continuously develop practical networking skills through hands-on projects an
 **Author:** Shehan Jayakody  
 **Field:** Network Engineering  
 **Education:** B.Tech. in Network TechnologyCisco Packet Tracer
-- Cisco IOS CLI
 
 ## Contact
 
