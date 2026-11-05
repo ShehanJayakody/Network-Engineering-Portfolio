@@ -12,6 +12,8 @@ The architecture incorporates dual ISP connections, two core multilayer switches
 
 The network consists of two ISP routers, two core multilayer switches, and access switches connecting end devices across different floors and departments.
 
+![Multi-Floor Enterprise Network Topology](Topology.png)
+
 ## 3. Key Network Technologies
 
 The following technologies are used in the network architecture:
