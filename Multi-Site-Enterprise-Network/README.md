@@ -15,7 +15,7 @@ The main objective is to establish communication between different routing domai
 
 ## 2. Network Topology
 
-![Multi-Site Enterprise Network Topology](topology.png)
+![Multi-Site Enterprise Network Topology](Topology.png)
 
 The network contains:
 
@@ -255,7 +255,7 @@ The centralized server uses the following configuration:
 
 **Enabled Services:**
 
-- DNS – Resolves `www.apex-corp.com` to the server IP address.
+- DNS – Resolves www.apex-corp.com to the server IP address.
 - HTTP – Provides web server functionality.
 - TFTP – Provides Trivial File Transfer Protocol service.
 
