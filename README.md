@@ -27,8 +27,8 @@ These projects demonstrate my understanding of network design, implementation, c
 
 | Project | Description |
 |---|---|
-| [Multi-Floor Enterprise Network](./Multi-Floor-Enterprise-Network/) | Enterprise network design with VLANs, switching, routing, DHCP, and network redundancy. |
-|  | |
+| [Multi-Floor Enterprise Network - Switching](./Multi-Floor-Enterprise-Network/) | Enterprise network design with VLANs, switching, routing, DHCP, and network redundancy. |
+| [Multi-Site Enterprise Network – RIP & EIGRP](./Multi-Site-Enterprise-Network/) | Multi-site enterprise network implementation using RIPv2, EIGRP, bidirectional route redistribution, static routing, and centralized DNS, HTTP, and TFTP services. |
 | |  |
 | |  |
 | |  |
