@@ -250,12 +250,12 @@ The centralized server uses the following configuration:
 | IP Address | 172.31.100.36 |
 | Subnet Mask | 255.255.255.0 |
 | Default Gateway | 172.31.100.254 |
-| DNS Name | www.apex-corp.com |
+| DNS Name | "www.apex-corp.com" |
 | DNS A Record | 172.31.100.36 |
 
 **Enabled Services:**
 
-- DNS – Resolves www.apex-corp.com to the server IP address.
+- DNS – Resolves "www.apex-corp.com" to the server IP address.
 - HTTP – Provides web server functionality.
 - TFTP – Provides Trivial File Transfer Protocol service.
 
