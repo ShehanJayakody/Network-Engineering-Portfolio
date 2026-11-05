@@ -41,4 +41,4 @@ verification, and troubleshooting.
 
 ## Contact
 
-LinkedIn: [My LinkedIn Profile](linkedin.com/in/shehan-jayakody)
+LinkedIn: [Shehan Jayakody](linkedin.com/in/shehan-jayakody)
