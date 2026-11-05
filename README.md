@@ -1,42 +1,54 @@
 # Network Engineering Portfolio
 
-**Shehan Jayakody**
-| B.Tech. in Network Technology Undergraduate
-| CCNA Candidate
+**Shehan Jayakody**  
+B.Tech. in Network Technology Undergraduate | CCNA Candidate
 
 ## About This Portfolio
 
-This repository contains my practical networking
-labs and projects developed using Cisco Packet Tracer.
+Welcome to my Network Engineering Portfolio.
 
-The projects demonstrate my knowledge and practical
-skills in network implementation, configuration,
-verification, and troubleshooting.
+This repository contains practical networking projects and laboratory exercises developed using Cisco Packet Tracer as part of my learning and professional development.
+
+These projects demonstrate my understanding of network design, implementation, configuration, verification, and troubleshooting.
 
 ## Technical Areas
 
-- Network Switching
+- Network Switching and VLAN Configuration
 - VLANs and Inter-VLAN Routing
-- STP and EtherChannel
+- Spanning Tree Protocol (STP)
+- EtherChannel and Network Redundancy
 - Static and Dynamic Routing
 - OSPF, EIGRP and RIP
-- DHCP and DNS
+- DHCP and DNS Configuration
 - SSH Configuration
 - Network Troubleshooting
 
 ## Projects
 
-| Project            | Description                 |
-|--------------------|-----------------------------|
-| Network Switching  | VLANs, Trunking, Inter-VLAN |
-| Network Routing    | Static Routing, OSPF, EIGRP |
-| Network Redundancy | STP, EtherChannel           |
-| Network Services   | DHCP, DNS, SSH              |
-| Troubleshooting    | Network Fault Diagnosis     |
+| Project | Description |
+|---|---|
+| [Multi-Floor Enterprise Network](./Multi-Floor-Enterprise-Network/) | Enterprise network design with VLANs, switching, routing, DHCP, and network redundancy. |
+|  | |
+| |  |
+| |  |
+| |  |
+|  |  |
 
-## Tools
+## Tools and Technologies
 
 - Cisco Packet Tracer
+- Wireshark
+- Cisco IOS CLI
+
+## Objective
+
+To continuously develop practical networking skills through hands-on projects and laboratory exercises, focusing on enterprise network implementation, configuration, and troubleshooting.
+
+---
+
+**Author:** Shehan Jayakody  
+**Field:** Network Engineering  
+**Education:** B.Tech. in Network TechnologyCisco Packet Tracer
 - Cisco IOS CLI
 
 ## Contact
