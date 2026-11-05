@@ -255,7 +255,7 @@ The centralized server uses the following configuration:
 
 **Enabled Services:**
 
-- DNS – Resolves apex-corp.com to the server IP address.
+- DNS – Resolves `apex-corp.com` to the server IP address.
 - HTTP – Provides web server functionality.
 - TFTP – Provides Trivial File Transfer Protocol service.
 
