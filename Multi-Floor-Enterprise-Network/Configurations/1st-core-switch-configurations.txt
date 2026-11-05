@@ -1,0 +1,285 @@
+Current configuration : 6008 bytes
+!
+version 12.2(37)SE1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname CORE-S1
+!
+!
+no profinet
+enable secret 5 $1$mERr$YvmKzV/azs7a6HGfflFi2/
+!
+!
+ip dhcp excluded-address 192.168.50.250 192.168.50.254
+ip dhcp excluded-address 192.168.10.250 192.168.10.254
+ip dhcp excluded-address 192.168.20.250 192.168.20.254
+ip dhcp excluded-address 192.168.25.250 192.168.25.254
+ip dhcp excluded-address 192.168.30.250 192.168.30.254
+ip dhcp excluded-address 192.168.40.250 192.168.40.254
+ip dhcp excluded-address 192.168.40.10 192.168.40.15
+!
+ip dhcp pool GUEST-POOL
+ network 192.168.50.0 255.255.255.0
+ default-router 192.168.50.254
+ dns-server 8.8.8.8
+ip dhcp pool ADMIN-POOL
+ network 192.168.10.0 255.255.255.0
+ default-router 192.168.10.254
+ dns-server 8.8.8.8
+ip dhcp pool ENG-POOL
+ network 192.168.20.0 255.255.255.0
+ default-router 192.168.20.254
+ dns-server 8.8.8.8
+ip dhcp pool STAFF-POOL
+ network 192.168.25.0 255.255.255.0
+ default-router 192.168.25.254
+ dns-server 8.8.8.8
+ip dhcp pool MNG-POOL
+ network 192.168.40.0 255.255.255.0
+ default-router 192.168.40.254
+ dns-server 8.8.8.8
+ip dhcp pool IT-POOL
+ network 192.168.30.0 255.255.255.0
+ default-router 192.168.30.254
+ dns-server 8.8.8.8
+!
+!
+ip routing
+!
+!
+!
+!
+username shehan secret 5 $1$mERr$YvmKzV/azs7a6HGfflFi2/
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip ssh version 2
+ip domain-name shehan.local
+!
+!
+spanning-tree mode rapid-pvst
+spanning-tree vlan 1,10,20,25 priority 24576
+spanning-tree vlan 30,40,50 priority 28672
+!
+!
+!
+!
+!
+!
+interface Port-channel1
+ switchport trunk allowed vlan 10,30,40,50
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Port-channel2
+ switchport trunk allowed vlan 20,30,40
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Port-channel3
+ switchport trunk allowed vlan 10,25,30,40
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Port-channel4
+ switchport trunk allowed vlan 10,20,25,30,40,50
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Port-channel5
+ switchport trunk allowed vlan 20,25,30,40
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/1
+ switchport trunk allowed vlan 10,30,40,50
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 1 mode passive
+!
+interface FastEthernet0/2
+ switchport trunk allowed vlan 10,30,40,50
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 1 mode passive
+!
+interface FastEthernet0/3
+ switchport trunk allowed vlan 10,25,30,40
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 3 mode passive
+!
+interface FastEthernet0/4
+ switchport trunk allowed vlan 10,25,30,40
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 3 mode passive
+!
+interface FastEthernet0/5
+ switchport trunk allowed vlan 20,25,30,40
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 5 mode passive
+!
+interface FastEthernet0/6
+ switchport trunk allowed vlan 20,25,30,40
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 5 mode passive
+!
+interface FastEthernet0/7
+ switchport trunk allowed vlan 20,30,40
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 2 mode passive
+!
+interface FastEthernet0/8
+ switchport trunk allowed vlan 20,30,40
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 2 mode passive
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+ switchport trunk allowed vlan 10,20,25,30,40,50
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 4 mode active
+!
+interface FastEthernet0/24
+ switchport trunk allowed vlan 10,20,25,30,40,50
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 4 mode active
+!
+interface GigabitEthernet0/1
+ no switchport
+ ip address 203.0.113.2 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan10
+ description ADMIN-VLAN
+ mac-address 0002.4ab9.b501
+ ip address 192.168.10.252 255.255.255.0
+ standby 10 ip 192.168.10.254
+ standby 10 priority 110
+ standby 10 preempt
+!
+interface Vlan20
+ description ENG-VLAN
+ mac-address 0002.4ab9.b502
+ ip address 192.168.20.252 255.255.255.0
+ standby 20 ip 192.168.20.254
+ standby 20 priority 110
+ standby 20 preempt
+!
+interface Vlan25
+ description STAFF-VLAN
+ mac-address 0002.4ab9.b503
+ ip address 192.168.25.252 255.255.255.0
+ standby 25 ip 192.168.25.254
+ standby 25 priority 110
+ standby 25 preempt
+!
+interface Vlan30
+ description IT-VLAN
+ mac-address 0002.4ab9.b504
+ ip address 192.168.30.252 255.255.255.0
+ standby 30 ip 192.168.30.254
+ standby 30 priority 110
+ standby 30 preempt
+!
+interface Vlan40
+ mac-address 0002.4ab9.b505
+ ip address 192.168.40.252 255.255.255.0
+ standby 40 ip 192.168.40.254
+ standby 40 priority 110
+ standby 40 preempt
+!
+interface Vlan50
+ description GUEST-VLAN
+ mac-address 0002.4ab9.b506
+ ip address 192.168.50.252 255.255.255.0
+ standby 50 ip 192.168.50.254
+ standby 50 priority 110
+ standby 50 preempt
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 203.0.113.1 
+!
+ip flow-export version 9
+!
+!
+ip access-list extended GUEST-SECURITY
+ deny ip any 192.168.10.0 0.0.0.255
+ deny ip any 192.168.20.0 0.0.0.255
+ deny ip any 192.168.30.0 0.0.0.255
+ deny ip any 192.168.25.0 0.0.0.255
+ deny ip any 192.168.40.0 0.0.0.255
+ permit ip any any
+!
+!
+!
+!
+!
+!
+line con 0
+ password 7 0812444B01180B464248
+ login
+!
+line aux 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+!
+!
+!
+end
