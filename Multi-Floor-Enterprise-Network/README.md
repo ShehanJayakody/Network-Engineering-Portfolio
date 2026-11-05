@@ -225,4 +225,4 @@ Through this project, practical knowledge and experience are developed in:
 
 **Project Category:** Enterprise Network Switching and Infrastructure
 
-**Author:** Shehan Jayakody
+**Author:** [Shehan Jayakody](linkedin.com/in/shehan-jayakody)
