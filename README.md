@@ -29,7 +29,7 @@ These projects demonstrate my understanding of network design, implementation, c
 |---|---|
 | [Multi-Floor Enterprise Network - Switching](./Multi-Floor-Enterprise-Network/) | Enterprise network design with VLANs, switching, routing, DHCP, and network redundancy. |
 | [Multi-Site Enterprise Network – RIP & EIGRP](./Multi-Site-Enterprise-Network/) | Multi-site enterprise network implementation using RIPv2, EIGRP, bidirectional route redistribution, static routing, and centralized DNS, HTTP, and TFTP services. |
-| [OSPF-ASBR-Lab – ASBR & Default Route Propagation](./OSPF-ASBR-Lab/) | Multi-router network implementation using OSPF Area 0, loopback-based router IDs, ASBR configuration, default route propagation, and static routing for external network connectivity. |
+| [OSPF ASBR Lab – ASBR & Default Route Propagation](./OSPF-ASBR-Lab/) | Multi-router network implementation using OSPF Area 0, loopback-based router IDs, ASBR configuration, default route propagation, and static routing for external network connectivity. |
 
 ## Tools and Technologies
 
